@@ -1,0 +1,162 @@
+:root{
+    --clr-Purple: hsl(259, 100%, 65%);
+   --clr-Light-red: hsl(0, 100%, 67%);
+   
+    --clr-White: hsl(0, 0%, 100%);
+   --clr-Off-white: hsl(0, 0%, 94%);
+   --clr-Light-grey: hsl(0, 0%, 86%);
+   --clr-Light-greyy: hsl(0, 1%, 65%);
+   --clr-Smokey-grey: hsl(0, 1%, 44%);
+   --cl-Off-black: hsl(0, 0%, 8%);
+   }
+   
+   @font-face{
+       font-family:Poppins;
+       font-style:normal;
+   font-display:swap; 
+   font: weight 800i;
+   src: url(C:\myProjects\ageCalculator\Poppins-Bold)format(ttf);
+   }
+   
+   @font-face{
+       font-family:Poppins;
+       font-style:normal;
+   font-display:swap; 
+   font: weight 700;
+   src: url(C:\myProjects\ageCalculator\Poppins-Regular)format(ttf);
+   }
+   
+   @font-face{
+       font-family:Poppins;
+       font-style:normal;
+   font-display:swap; 
+   font: weight 400i;
+   src: url(C:\myProjects\ageCalculator\Poppins-Regular)format(ttf);
+   }
+   body{
+    box-sizing:border-box;
+    margin:unset;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+       display: flex;
+       background-color: var(--clr-Light-grey);
+       justify-content: center;
+       align-items: center;
+       min-height: 100vh;
+   }
+
+   @media(min-width:600px){
+   .input_space{
+    grid-template-columns: 1fr 1fr 2.4fr;
+    display: grid;
+  justify-content: space-between;
+}
+   .day {
+       color: var(--clr-Smokey-grey);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .month {
+    color: var(--clr-Smokey-grey);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  .year {
+    color: var(--clr-Smokey-grey);
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+}
+.space{
+    background-color: var(--clr-White);
+    border-radius: 20px 20px 100px 20px;
+    padding: 100px 100px;
+}
+#dayI::placeholder {
+    font-weight: 900;
+    font-size: large;
+    color: var(--clr-Light-greyy);
+
+  }
+  #monthI::placeholder {
+    font-weight: 900;
+    font-size: large;
+    color: var(--clr-Light-greyy);
+  }
+  #yearI::placeholder {
+    font-weight: 900;
+    font-size: large;
+    color: var(--clr-Light-greyy);
+  }
+  #dayI {
+    width: 100px; /* Adjust the width as needed */
+    height: 35px; /* Adjust the height as needed */
+    border-radius: 6px;
+    border: 1px solid var(--clr-Light-grey);
+  }
+  #monthI {
+    width: 100px; /* Adjust the width as needed */
+    height: 35px; /* Adjust the height as needed */
+    border-radius: 6px;
+border: 1px solid var(--clr-Light-grey);
+  }
+  #yearI {
+    width: 120px; /* Adjust the width as needed */
+    height: 35px; /* Adjust the height as needed */
+    border-radius: 6px;
+    border: 1px solid var(--clr-Light-grey);
+  }
+ .yearO,
+ .monthO,
+ .dayO
+ {
+     display: flex;
+     font-size: x-large;
+     line-height: 0;
+     font-weight: 1000;
+     font-family: "sans-serif";
+     font-style: italic;
+ }
+ .yearO h1 span,
+ .monthO h1 span,
+ .dayO h1 span {
+   font-size: xxxx-large;
+   color: var(--clr-Purple);
+   font-style: italic;
+ }
+ .ligneImage {
+     margin: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .ligneImage hr {
+    flex-grow: 1;
+    margin-right: 0;
+    margin-left:0;
+  }
+  .submit{
+    width: 3.7rem;
+    display: grid;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--clr-Purple);
+    border-color: var(--clr-Purple);
+    border: none;
+  outline: none;
+  }
+.space{
+    display: grid;
+    margin: unset;
+    padding: 50px;
+    margin: 100px;
+}
+small{
+  color: var(--clr-Light-red);
+
+}
+.submit:hover{
+  cursor: pointer;
+}
